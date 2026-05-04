@@ -1,6 +1,6 @@
 # TAOD-VEGA: Task-Aware Object Detection with Semantic Relevance Scoring
 
-**Team Voltrons — NIT Patna | DVCon India 2026 
+*Team Voltrons — NIT Patna | DVCon India 2026* 
 *Rachit Kumar · Mohd Sameer · Om Vats*
 
 ---
