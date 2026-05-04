@@ -1,19 +1,6 @@
-Metadata-Version: 2.1
-Name: taod-vega
-Version: 0.1.0
-Summary: Task-Aware Object Detection with Semantic Relevance Scoring on VEGA/Genesys-2
-Home-page: https://github.com/rachit-supreme/taod-vega
-Author: Team Voltrons, NIT Patna
-Author-email: supremerachit@gmail.com
-Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: OS Independent
-Requires-Python: >=3.10
-Description-Content-Type: text/markdown
-
 # TAOD-VEGA: Task-Aware Object Detection with Semantic Relevance Scoring
 
-**Team Voltrons — NIT Patna | DVCon India 2026 | Submission 650**
+**Team Voltrons — NIT Patna | DVCon India 2026 
 *Rachit Kumar · Mohd Sameer · Om Vats*
 
 ---
@@ -228,4 +215,4 @@ Sawatzky, J., Schneider, C., Schäfer, H., & Gall, J. (2019).
 
 ## License
 
-MIT © 2025 Team Voltrons, NIT Patna
+MIT © 2026 Team Voltrons, NIT Patna
