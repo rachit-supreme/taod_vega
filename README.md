@@ -1,11 +1,11 @@
-# TAOD-VEGA: Task-Aware Object Detection with Semantic Relevance Scoring
+## TAOD-VEGA: Task-Aware Object Detection with Semantic Relevance Scoring ##
 
 *Team Voltrons — NIT Patna | DVCon India 2026* 
 *Rachit Kumar · Mohd Sameer · Om Vats*
 
 ---
 
-## Overview
+## Overview ##
 
 Conventional object detectors (YOLOv8, Faster-RCNN, SSD) identify *every* object in a scene without understanding intent. For robotics and edge AI, only **one object matters** — the one most relevant to the current task.
 
@@ -14,7 +14,7 @@ Conventional object detectors (YOLOv8, Faster-RCNN, SSD) identify *every* object
 > **Example:** Image: kitchen counter with wine glass, cup, plate, fork, bottle.
 > Task: `"Serve a drink"` → **wine_glass** | bbox: (245, 130, 80, 120) | score: 0.94
 
-### Targets
+### Targets ###
 | Metric | Target | Notes |
 |--------|--------|-------|
 | Latency | < 50 ms | On FPGA (VEGA + CNNA) |
@@ -23,7 +23,7 @@ Conventional object detectors (YOLOv8, Faster-RCNN, SSD) identify *every* object
 
 ---
 
-## Architecture
+## Architecture ##
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -69,7 +69,7 @@ HARDWARE STACK (Genesys-2 Kintex-7 XC7K325T):
 
 ---
 
-## Quick Start
+## Quick Start ##
 
 ```bash
 # 1. Clone and install
@@ -97,7 +97,7 @@ python demo/cli_demo.py --benchmark \
 
 ---
 
-## Repository Structure
+## Repository Structure ##
 
 ```
 taod_vega/
@@ -150,7 +150,7 @@ taod_vega/
 
 ---
 
-## Benchmark Results
+## Benchmark Results ##
 
 *(Placeholder — run `taod-benchmark` with COCO val2017 to populate)*
 
@@ -174,9 +174,9 @@ taod_vega/
 
 ---
 
-## Hardware Deployment
+## Hardware Deployment ##
 
-### FPGA Synthesis (Vivado 2023.x)
+### FPGA Synthesis (Vivado 2025.1) ###
 
 ```tcl
 # In Vivado Tcl Console or batch mode:
@@ -193,7 +193,7 @@ Target utilisation on XC7K325T:
 | BRAM | < 75% | 512 KB weight + 256 KB activation |
 | Fmax | ≥ 100 MHz | 10 ns clock period |
 
-### VEGA Firmware
+### VEGA Firmware ###
 
 ```bash
 cd vega_sw/
@@ -205,7 +205,7 @@ make flash        # JTAG programming via OpenOCD
 
 ---
 
-## Reference
+## Reference ##
 
 Sawatzky, J., Schneider, C., Schäfer, H., & Gall, J. (2019).
 **What Object Should I Use? — Task Driven Object Detection.**
